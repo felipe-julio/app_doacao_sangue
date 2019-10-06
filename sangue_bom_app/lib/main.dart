@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sangue_bom_app/pages/logado.dart';
 import 'package:sangue_bom_app/pages/login.page.dart';
 
 void main() => runApp(MyApp());
@@ -8,11 +9,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Sangue Bom',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/logado': (context) => Logado(),
+      },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: LoginPage(),
     );
   }
 }

@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
+  var formKey = GlobalKey<FormState>();
+
+  Button({@required this.formKey});
+
   @override
   Widget build(BuildContext context) {
     return Container(

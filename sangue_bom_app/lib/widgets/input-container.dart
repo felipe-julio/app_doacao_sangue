@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'input.widget.dart';
-
 class InputContainer extends StatelessWidget {
   var type = "email";
+  String value;
 
-  InputContainer({@required this.type});
+  InputContainer({@required this.type, this.value});
 
   @override
   Widget build(BuildContext context) {
@@ -45,15 +44,45 @@ class InputContainer extends StatelessWidget {
             width: 10,
           ),
           type == "email"
-              ? Input(
-                  labelText: "Nome de Usuário:",
-                  inputType: TextInputType.text,
-                  obscureText: false,
+              ? Container(
+                  width: 200,
+                  height: 60,
+                  child: TextFormField(
+                    keyboardType: TextInputType.text,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      labelText: "Usuário",
+                      labelStyle: TextStyle(
+                        color: Colors.black.withOpacity(0.5),
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                      ),
+                    ),
+                    style: TextStyle(
+                      color: Colors.black.withOpacity(0.5),
+                    ),
+                  ),
                 )
-              : Input(
-                  labelText: "Senha:",
-                  inputType: TextInputType.text,
-                  obscureText: true,
+              : Container(
+                  width: 200,
+                  height: 60,
+                  child: TextFormField(
+                    keyboardType: TextInputType.visiblePassword,
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      labelText: "Senha",
+                      labelStyle: TextStyle(
+                        color: Colors.black.withOpacity(0.5),
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                      ),
+                    ),
+                    style: TextStyle(
+                      color: Colors.black.withOpacity(0.5),
+                    ),
+                  ),
                 ),
         ],
       ),
