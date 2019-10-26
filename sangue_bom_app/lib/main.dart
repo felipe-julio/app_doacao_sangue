@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sangue_bom_app/pages/cadastro.page.dart';
+import 'package:sangue_bom_app/pages/info.page.dart';
 import 'package:sangue_bom_app/pages/logado.dart';
 import 'package:sangue_bom_app/pages/login.page.dart';
 
@@ -13,6 +15,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => LoginPage(),
         '/logado': (context) => Logado(),
+        '/CadastrarUsuario': (context) => CadastroPage()
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

@@ -232,6 +232,18 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: this.submit,
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              FlatButton(
+                child: Text(
+                  "Cadastrar Usuario",
+                  style: TextStyle(fontSize: 15),
+                ),
+                onPressed: () => {
+                  Navigator.pushNamed(context, "/CadastrarUsuario"),
+                },
+              ),
             ],
           ),
         ),
