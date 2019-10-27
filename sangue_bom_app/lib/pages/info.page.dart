@@ -40,7 +40,7 @@ class InfoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(10, 20, 10, 5),
+      // margin: EdgeInsets.fromLTRB(10, 20, 10, 5),
       child: Scaffold(
         appBar: AppBar(
           title: Text("Informações Uteis"),

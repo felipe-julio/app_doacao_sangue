@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
     // First validate form.
     if (this._formKey.currentState.validate()) {
       _formKey.currentState.save();
-      Navigator.pushNamed(context, "/logado"); // Save our form now.
+      Navigator.pushNamed(context, "/Home"); // Save our form now.
 
     }
   }
