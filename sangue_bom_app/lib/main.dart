@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sangue_bom_app/pages/cadastro.page.dart';
-import 'package:sangue_bom_app/pages/info.page.dart';
 import 'package:sangue_bom_app/pages/logado.dart';
 import 'package:sangue_bom_app/pages/login.page.dart';
+import 'package:sangue_bom_app/pages/mapa.page.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => LoginPage(),
         '/logado': (context) => Logado(),
-        '/CadastrarUsuario': (context) => CadastroPage()
+        '/CadastrarUsuario': (context) => MapaPage()
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

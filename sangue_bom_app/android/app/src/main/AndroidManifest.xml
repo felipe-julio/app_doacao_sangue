@@ -10,6 +10,10 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="sangue_bom_app"
         android:icon="@mipmap/ic_launcher">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyDNI5PRR9VR9Fx2Fo41D7TZkRbvpHoKnMs"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
